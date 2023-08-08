@@ -1,0 +1,151 @@
+@@include("partials/_head.html",{
+    "pageCss": '2fa-auth-code',
+    "description": 'generate 2fa code online',
+    "keywordText": '2fa.live, 2fa live',
+    "title": '2FA online code generator - Accbuddy',
+    })
+    @@include("partials/_header.html")
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/otpauth/9.1.4/otpauth.umd.min.js"></script>
+    
+    <!-- ============main content wrapper==========[start] -->
+    <div class="ab-main-content-wrapper">
+        <script src="./js/2fa.js" ></script>
+        <div class="ab-container">
+            <div class="ab-main-content-box ab-2fa-auth-code-wrap"> 
+                <!-- main content start here -->
+                <main class="ab-main--content ab-2fa-auth-code">
+                    <div class="ab-2fa-auth-centent-sec">
+                        <h1 class="ab-2fa-auth-title ab-title ab-violate-color">2FA Online Code Generator</h1>
+                        <!-- 2fa auth code box start -->
+                        <div class="ab-2fa-auth-code-box">
+                            <!-- NOTE: after code generate pass a 
+                                "special class ['generated-code'] here parent div 
+                                that show visible bottom 2fa code 
+                                and changed the middle loaded text -->
+                            <div class="ab-2fa-auth-code-cont" id="2fa-container">
+                                <div class="ab-2fa-code-box ab-2fa-secret-box">
+                                     <h4 class="ab-2fa-code-title ab-violate-color">2FA Secret</h4>
+                                    <p class="ab-2fa-text ab-violate-color">Get code for 2 factor authentication easiest -
+                                        Please store your 2FA secret safely</p>
+                                    <form action="javascript:submit()" class="ab-2fa-auth-code-form">
+                                        <input type="code" class="ab-2fa-input-code-filed ab-secrite-field" id="secret-code">
+                                        <button type="submit" 
+                                            class="ab-button-style ab-violet-btn ab-2fa-auth-btn">
+                                            <span class="secrit-code1">Submit</span>
+                                            <span class="secrit-code2">Submit another code</span>
+                                        </button>  
+                                    </form>   
+                                </div>       
+                                <div class="divider-alart-loader">   
+                                    <h4 class="ab-light-color loaded-text1">Waiting for secret..</h4>
+                                    <h4 class="ab-light-color loaded-text2">Your code is ready</h4>
+                                </div>   
+                                <div class="ab-2fa-code-box ab-2fa-code-cont">
+                                    <h4 class="ab-2fa-code-title ab-violate-color">Your 2FA Code</h4>
+                                    <p class="ab-2fa-text ab-violate-color">2-step verification code</p>
+                                    <div class="ab-2fa-auth-code-form" onclick="copyToClipboard()">
+                                        <input type="code" class="ab-2fa-input-code-filed ab-code-field" id="2fa-code">
+                                        <button type="submit"
+                                            class="ab-button-style ab-orange-button-disable ab-2fa-auth-btn">Copy</button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                        <!-- [end] -->
+                        <!-- 2fa info content start -->
+                        <div class="ab-2fa-auth-code-info-text">
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">So, what do we have here? </h4>
+                                <p class="ab-2fa-text">It is an online code generator, my friend! You simply enter your secret and voila! You get yourself a temporary 2FA code. Pretty nifty, huh? Trust me, it's the bee's knees!</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">How do I work with this thing? </h4>
+                                <p class="ab-2fa-text">
+                                    First, let's get things clear, there are two parameters under which we operate. First is
+                                    <strong class="ab-violate-color">"SECRET"</strong>, and second is <strong
+                                        class="ab-violate-color">"TEMP CODE"</strong>.
+                                    <strong class="ab-violate-color">SECRET</strong> is a special code that our system uses
+                                    to generate <strong class="ab-violate-color">TEMP CODE</strong>. 
+                                    So first thing, you gotta have a <strong class="ab-violate-color">SECRET</strong> saved
+                                    up or, if you haven't got one yet,
+                                    activate 2FA authorization by putting here <strong
+                                        class="ab-violate-color">SECRET</strong>, get <strong class="ab-violate-color">TEMP
+                                        CODE</strong> to pass or activate the
+                                    2FA authentication. Make sure you keep the secret in safe place because next time you
+                                    need the <strong class="ab-violate-color">TEMP CODE</strong>, you'll need to enter it
+                                    here again. Easy, 2FA live authorization,
+                                    right?
+                                </p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">How long is the code valid?</h4>
+                                <p class="ab-2fa-text">The TEMP CODE is typically valid for either 30 or 60 seconds,
+                                    depending on the site where you enter it.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Is it safe to use AccBuddy 2FA?</h4>
+                                <p class="ab-2fa-text">Absolutely, it is completely safe to utilize our site for 2FA. Rest
+                                    assured, no one will have any knowledge of the specific site you are employing this 2FA
+                                    for.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">What if Accbuddy closed? </h4>
+                                <p class="ab-2fa-text">No worries, I've got you covered. Alternatively, you can enter your
+                                    SECRET into Google Authenticator, and you'll be good to go. Trust me, it's as easy as
+                                    pie. 
+                                    P.S. you may search google for 2fa live, or 2fa.liv or
+                                    2fa code generator online  to get sites with similar functionality.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Why did we create this service?</h4>
+                                <p class="ab-2fa-text">Accbuddy is a site that prides itself on being friendly to its
+                                    customers. We have made it our mission to provide useful services that cater to the
+                                    needs of our valued customers.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Can i use it for http://fortnite.com/2fa?</h4>
+                                <p class="ab-2fa-text">Yes, our site is perfect for activating it. Use it for
+                                    https //fortnite.com/2fa</p>
+                            </div>
+                        </div>
+                        <!-- [end] -->
+                    </div>
+                </main>
+                <!-- sidebar content start here -->
+                <aside class="ab-main--sidebar-content">
+    
+                    <!-- text block content start -->
+                    @@include("partials/_block-content-v1.html",{
+                    "class": '',
+                    })
+    
+                    <!-- text block content start -->
+                    @@include("partials/_block-content-v2.html",{
+                    "class": '',
+                    })
+                    <!-- news content start -->
+                    <div class="ab-news-content-box">
+                        <h4 class="news-title ab-orange-color">News</h4>
+                        <ul class="news-content-items">
+                            @@loop("partials/_news-items.html", "data/data.json")
+                        </ul>
+                    </div>
+                    <!-- [END] -->
+    
+    
+                </aside>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    <!-- ============main content wrapper==========[end] -->
+    
+    <!-- footer partials start -->
+    @@include("partials/_footer.html")
+    <!-- cookies policy start -->
+    @@include("partials/_cookies.html")
+    <!-- [end] -->
+    @@include("partials/_foot.html")
+    

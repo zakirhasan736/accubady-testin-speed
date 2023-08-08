@@ -1,5 +1,10 @@
 @@include("partials/_head.html",{
 "pageCss": 'article-page',
+"title": 'Helpful Articles and Tips - AccBuddy Blog',
+"description": 'Explore insightful articles at AccBuddy. We provide relevant, engaging content to enhance your knowledge and enrich your online shopping experience.',
+"keywordText": 'accbuddy articles',
+"canonical": 'https://accbuddy.com/articles'
+
 })
 @@include("partials/_header.html")
 <!-- ============main content wrapper==========[start] -->
@@ -10,19 +15,19 @@
             <!-- main content start here -->
             <main class="ab-main--content article-page">
 
-                <!-- article partials section  -->
+                <!-- article partials section  --> 
                 @@include("partials/_articles.html")
                 <!-- promo partials section  -->
                 @@include("partials/_promo.html")
                 <!-- single article details section-->
-               @@include("partials/_single-article-details.html")
+              <!-- @@include("partials/_single-article-details.html")-->
                 <!-- text block content start -->
                 @@include("partials/_block-content-v2.html",{
                 "class": 'extra-text-block--view',
                 })
             
                   <!-- article partials section  -->
-                  @@include("partials/_articles.html",{
+                  @@include("partials/_articles2.html",{
                     "class": 'articles-block-2'
                   })
                 @@include("partials/_paginetion.html") 
@@ -43,7 +48,7 @@
 
                 <!-- news content start -->
                 <div class="ab-news-content-box">
-                    <h4 class="news-title">News</h4>
+                    <h4 class="news-title ab-orange-color">News</h4>
                     <ul class="news-content-items">
                         @@loop("partials/_news-items.html", "data/data.json")
                     </ul>

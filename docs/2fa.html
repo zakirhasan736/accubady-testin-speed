@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="generate 2fa code online">
+  <meta name="keyword" content="2fa.live, 2fa live">
+  <link rel="shortcut icon" href="image/favicon.png" type="image/x-icon" />
+  <link rel="canonical" href="@@canonical">
+
+  <title>2FA online code generator - Accbuddy</title>
+
+  <!-- link style start here -->
+  <link rel="stylesheet" href="css/style.min.css" media="all">
+  <link rel="stylesheet" href="css/2fa-auth-code.min.css" media="all">
+  <!-- script start here -->
+  
+  <!-- =====start script write here -->
+  <script src="js/tidio.js"  async></script>
+
+  <script src="js/gt.js"  async></script>
+  
+  
+  
+  <script src="js/footer-form.js"  async></script>
+  
+  <script src="js/fbpixels.js"  async></script>
+
+  <!-- ============header section styles==========[start] -->
+<!-- Meta Pixel Code -->
+</head>
+
+<body>
+    
+<header class="ab-header-section">   
+    <div class="ab-container">
+        <div class="ab-header-wrapper">
+            <div class="ab-header-nav-box">
+                <a href="./index.html" class="ab-header-brand">
+                    <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" alt="ab brand logo">
+                    <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo" alt="ab brand logo">
+                </a>
+                <div class="ab-header-nav">
+                    <ul class="ab-header-nav-items">
+                        <li class="ab-nav-link-items"><a href="./">catalog</a></li>
+                        <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
+                        <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
+                        <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
+                        <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                    <div class="nav-btn-item-cont-box">
+                        <div class="ab-currency-button">
+                            <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
+                                alt="currency icons" class="currency-icons">
+                            <a href="./suppliers.html"><span>Earn Money <span>Selling Accounts</span></span></a>
+                        </div>
+                        <div class="ab-tools-menu-box">
+                            <button class="ab-tools-btn"><span>tools</span></button>
+                            <!-- tools menu -->
+                            <div class="ab-tools-menu">
+                                <ul class="ab-tools-menu-item">
+                                    <li class="ab-tools-menu-list">
+                                        <a href="./2fa.html">
+                                            <img src="image/2fa-code-icon.svg" width="381" height="38" alt="user icons"
+                                                class="user-icons">
+                                            <p>Online 2FA generator</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- [END] -->
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="ab-header-auth-box">
+                <button id="auth-button" class="ab-auth-button"><img src="image/user.svg" width="21" height="26"
+                        alt="user icons">
+                    <!-- <span>Hi, Buddy!</span> -->
+                </button>
+                <button class="ab-trigger-button" id="triggerBtn"><img src="image/nav-trigger.svg" width="29"
+                        height="23" alt="trigger icons"></button>
+
+                <!-- logged user menu -->
+                <div class="ab-logged-user-menu">
+                    <ul class="ab-logged-user-menu-item">
+                        <li class="ab-logged-user-menu-list">
+                            <a href="/">
+                                <img src="image/users-fill-orange.svg" width="21" height="26" alt="user icons"
+                                    class="user-icons">
+                                <p>Johny’s
+                                    account</p>
+                            </a>
+                        </li>
+                        <li class="ab-logged-user-menu-list">
+                            <a href="./order-history.html">
+                                <img src="image/history-menu-icons.svg" width="29" height="28" alt="history menu icons"
+                                    class="history-icons">
+                                <p>Order
+                                    history</p>
+                            </a>
+                        </li>
+                        <li class="ab-logged-user-menu-list">
+                            <a href="./account.html">
+                                <img src="image/users-outline-icon.svg" width="23.04" height="27.49" alt="user icons"
+                                    class="user-icons">
+                                <p>Account
+                                    settings</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="./signup.html" class="logged-out-btn">Logout</a>
+                </div>
+                <!-- [END] -->
+                <!-- logged user menu -->
+                <div class="ab--user-menu">
+                    <a href="./signin.html" class="user-menu-btn"><img src="image/users-fill-white.svg" width="21"
+                            height="26" alt="" class="user-icons"> Sign in</a>
+                    <ul class="ab--user-menu-item">
+                        <li class="ab--user-menu-list">
+                            <a href="./signup.html">
+                                <img src="image/users-union-icons.svg" width="29" height="26" alt="user icons"
+                                    class="user-icons">
+                                <p>New user?
+                                    Sign up</p>
+                            </a>
+                        </li>
+                        <li class="ab--user-menu-list">
+                            <a href="./track-order.html">
+                                <img src="image/chart-violet.svg" height="30" height="25" alt="history menu icons"
+                                    class="history-icons">
+                                <p>Find an
+                                    order</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- [END] -->
+            </div>
+        </div>
+
+        <!-- [mobile menu here to start] -->
+        <div class="ab-mobile-slide-nav mobilenav">
+            <div class="ab-alide-nav-brand">
+                <a href="./index.html" class="ab-header-brand">
+                    <img src="image/brand-logo-mobo.svg" width="124" height="20" class="mobo-logo" alt="ab brand logo">
+                </a>
+                <button class="ab-close-button" id="closeBtn"><img src="image/close.svg" width="29" height="23"
+                        alt="trigger icons"></button>
+            </div>
+            <div class="ab-slide-nav-content">
+                <!-- logged user menu -->
+                <div class="ab-logged-user-menu">
+                    <ul class="ab-logged-user-menu-item">
+                        <li class="ab-logged-user-menu-list">
+                            <a href="/">
+                                <img src="image/users-fill-orange.svg" width="21" height="26" alt="user icons"
+                                    class="user-icons">
+                                <p>Johny’s
+                                    account</p>
+                            </a>
+                        </li>
+                        <li class="ab-logged-user-menu-list">
+                            <a href="./order-history.html">
+                                <img src="image/history-menu-icons.svg" width="29" height="28" alt="history menu icons"
+                                    class="history-icons">
+                                <p>Order
+                                    history</p>
+                            </a>
+                        </li>
+                        <li class="ab-logged-user-menu-list">
+                            <a href="./account.html">
+                                <img src="image/user-outline-icons.svg" width="23.04" height="27.49" alt="user icons"
+                                    class="user-icons">
+                                <p>Account
+                                    settings</p>
+                            </a>
+                        </li>
+                        <li class="ab-logged-user-menu-list">
+                            <a href="./2fa-short-code.html">
+                                <img src="image/2fa-code-icon.svg" width="381" height="38" alt="user icons"
+                                    class="user-icons">
+                                <p>Online 2FA generator</p>
+                                </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- [END] -->
+                <!-- logged user menu -->
+                <div class="ab--user-menu">
+                    <a href="./signin.html" class="user-menu-btn"><img src="image/users-fill-white.svg" width="21"
+                            height="26" alt="" class="user-icons"> Sign in</a>
+                    <ul class="ab--user-menu-item">
+                        <li class="ab--user-menu-list">
+                            <a href="./signup.html">
+                                <img src="image/users-union-icons.svg" width="29" height="26" alt="user icons"
+                                    class="user-icons">
+                                <p>New user?
+                                    Sign up</p>
+                            </a>
+                        </li>
+                        <li class="ab--user-menu-list">
+                            <a href="./track-order.html">
+                                <img src="image/chart-violet.svg" height="30" height="25" alt="history menu icons"
+                                    class="history-icons">
+                                <p>Find an
+                                    order</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- [END] -->
+                <div class="ab-header-nav">
+                    <ul class="ab-header-nav-items">
+                        <li class="ab-nav-link-items"><a href="./">catalog</a></li>
+                        <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
+                        <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
+                        <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
+                        <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                    </ul>
+                    <div class="ab-currency-button">
+                        <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
+                            alt="currency icons" class="currency-icons">
+                        <span>Earn Money Selling Accounts</span>
+                    </div>
+                </div>
+            </div>
+            <form action="/post" class="ab-header-input-form">
+                <div class="ab-form-input-box">
+                    <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                    <div class="ab-input-group">
+                        <input name="name" type="text" class="ab-input" required placeholder="Name">
+                        <span class="warn-text">Please enter your name</span>
+                    </div>
+                    <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                    <div class="ab-input-group">
+                        <input name="email" type="email" class="ab-input" placeholder="Email">
+                        <span class="warn-text">Please enter a valid email address</span>
+                    </div>
+                    <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                    <div class="ab-textarea-group">
+                        <textarea name="text" placeholder="Message"></textarea>
+                        <span class="warn-text">Please enter a message between 10 and 1000
+                            characters</span>
+                    </div>
+                    <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                    <div class="ab-check-requred">
+                        <label for="checkedRequered1">
+                            <input type="checkbox" id="checkedRequered1" class="check-mark">
+                            <span class="ab-check-mark-box"></span>
+                            <span class="text">I have read and agree to the Privacy Policy and
+                                Terms of Service</span>
+                        </label>
+                    </div>
+                    <div class="ab-button-group">
+                        <button class="ab-button-style ab-footer-button">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <!-- [END] -->
+
+    </div>
+</header>
+<!-- ============header section styles==========[end] -->
+<script src="js/header.js" async></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/otpauth/9.1.4/otpauth.umd.min.js"></script>
+    
+    <!-- ============main content wrapper==========[start] -->
+    <div class="ab-main-content-wrapper">
+        <script src="./js/2fa.js" ></script>
+        <div class="ab-container">
+            <div class="ab-main-content-box ab-2fa-auth-code-wrap"> 
+                <!-- main content start here -->
+                <main class="ab-main--content ab-2fa-auth-code">
+                    <div class="ab-2fa-auth-centent-sec">
+                        <h1 class="ab-2fa-auth-title ab-title ab-violate-color">2FA Online Code Generator</h1>
+                        <!-- 2fa auth code box start -->
+                        <div class="ab-2fa-auth-code-box">
+                            <!-- NOTE: after code generate pass a 
+                                "special class ['generated-code'] here parent div 
+                                that show visible bottom 2fa code 
+                                and changed the middle loaded text -->
+                            <div class="ab-2fa-auth-code-cont" id="2fa-container">
+                                <div class="ab-2fa-code-box ab-2fa-secret-box">
+                                     <h4 class="ab-2fa-code-title ab-violate-color">2FA Secret</h4>
+                                    <p class="ab-2fa-text ab-violate-color">Get code for 2 factor authentication easiest -
+                                        Please store your 2FA secret safely</p>
+                                    <form action="javascript:submit()" class="ab-2fa-auth-code-form">
+                                        <input type="code" class="ab-2fa-input-code-filed ab-secrite-field" id="secret-code">
+                                        <button type="submit" 
+                                            class="ab-button-style ab-violet-btn ab-2fa-auth-btn">
+                                            <span class="secrit-code1">Submit</span>
+                                            <span class="secrit-code2">Submit another code</span>
+                                        </button>  
+                                    </form>   
+                                </div>       
+                                <div class="divider-alart-loader">   
+                                    <h4 class="ab-light-color loaded-text1">Waiting for secret..</h4>
+                                    <h4 class="ab-light-color loaded-text2">Your code is ready</h4>
+                                </div>   
+                                <div class="ab-2fa-code-box ab-2fa-code-cont">
+                                    <h4 class="ab-2fa-code-title ab-violate-color">Your 2FA Code</h4>
+                                    <p class="ab-2fa-text ab-violate-color">2-step verification code</p>
+                                    <div class="ab-2fa-auth-code-form" onclick="copyToClipboard()">
+                                        <input type="code" class="ab-2fa-input-code-filed ab-code-field" id="2fa-code">
+                                        <button type="submit"
+                                            class="ab-button-style ab-orange-button-disable ab-2fa-auth-btn">Copy</button>
+                                    </div>
+                                </div>
+                            </div>  
+                        </div> 
+                        <!-- [end] -->
+                        <!-- 2fa info content start -->
+                        <div class="ab-2fa-auth-code-info-text">
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">So, what do we have here? </h4>
+                                <p class="ab-2fa-text">It is an online code generator, my friend! You simply enter your secret and voila! You get yourself a temporary 2FA code. Pretty nifty, huh? Trust me, it's the bee's knees!</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">How do I work with this thing? </h4>
+                                <p class="ab-2fa-text">
+                                    First, let's get things clear, there are two parameters under which we operate. First is
+                                    <strong class="ab-violate-color">"SECRET"</strong>, and second is <strong
+                                        class="ab-violate-color">"TEMP CODE"</strong>.
+                                    <strong class="ab-violate-color">SECRET</strong> is a special code that our system uses
+                                    to generate <strong class="ab-violate-color">TEMP CODE</strong>. 
+                                    So first thing, you gotta have a <strong class="ab-violate-color">SECRET</strong> saved
+                                    up or, if you haven't got one yet,
+                                    activate 2FA authorization by putting here <strong
+                                        class="ab-violate-color">SECRET</strong>, get <strong class="ab-violate-color">TEMP
+                                        CODE</strong> to pass or activate the
+                                    2FA authentication. Make sure you keep the secret in safe place because next time you
+                                    need the <strong class="ab-violate-color">TEMP CODE</strong>, you'll need to enter it
+                                    here again. Easy, 2FA live authorization,
+                                    right?
+                                </p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">How long is the code valid?</h4>
+                                <p class="ab-2fa-text">The TEMP CODE is typically valid for either 30 or 60 seconds,
+                                    depending on the site where you enter it.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Is it safe to use AccBuddy 2FA?</h4>
+                                <p class="ab-2fa-text">Absolutely, it is completely safe to utilize our site for 2FA. Rest
+                                    assured, no one will have any knowledge of the specific site you are employing this 2FA
+                                    for.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">What if Accbuddy closed? </h4>
+                                <p class="ab-2fa-text">No worries, I've got you covered. Alternatively, you can enter your
+                                    SECRET into Google Authenticator, and you'll be good to go. Trust me, it's as easy as
+                                    pie. 
+                                    P.S. you may search google for 2fa live, or 2fa.liv or
+                                    2fa code generator online  to get sites with similar functionality.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Why did we create this service?</h4>
+                                <p class="ab-2fa-text">Accbuddy is a site that prides itself on being friendly to its
+                                    customers. We have made it our mission to provide useful services that cater to the
+                                    needs of our valued customers.</p>
+                            </div>
+                            <div class="ab-article-widgets-card-items">
+                                <h4 class="ab-2fa-cont-title ab-orange-color">Can i use it for http://fortnite.com/2fa?</h4>
+                                <p class="ab-2fa-text">Yes, our site is perfect for activating it. Use it for
+                                    https //fortnite.com/2fa</p>
+                            </div>
+                        </div>
+                        <!-- [end] -->
+                    </div>
+                </main>
+                <!-- sidebar content start here -->
+                <aside class="ab-main--sidebar-content">
+    
+                    <!-- text block content start -->
+                    <!-- text block content start -->
+<div class="ab-block-content-box white-bg-block ">
+    <h4 class="block-text-title">
+        We accept most popular <span class="ab-color-text">Cryptocurrencies</span> (Bitcoin, Ethereum, Litecoin and Bitcoin Cash), Perfectmoney, and credit
+        card payments are also <span class="ab-color-text">available.</span>
+    </h4>
+</div>
+<!-- [END] -->
+
+    
+                    <!-- text block content start -->
+                    <!-- text block content start -->
+<div class="ab-block-content-box color-bg-block ">
+    <h4 class="block-text-title">
+       <span class="ab-color2-text">Your</span> One-Stop <br> Destination <br> To Buy <span
+            class="ab-color2-text">Verified</span> <br> Social Media, <br> Email <br> <span
+            class="ab-color2-text">Accounts </span>and license activation 
+        <span class="ab-color2-text"></span><span
+            class="ab-color2-text">product keys</span>!
+            
+    </h4>
+    <div class="block-box-brand"><img src="image/block-brand-logo1.svg" width="88"
+            height="75" alt="brand logo"></div>
+</div>
+<!-- [END] -->
+                    <!-- news content start -->
+                    <div class="ab-news-content-box">
+                        <h4 class="news-title ab-orange-color">News</h4>
+                        <ul class="news-content-items">
+                                    <li class="news-items">
+            <span class="news-dates">4 aug Jul 2023</span>
+            <p class="news-details-text">Accbuddy.com/2fa page opened. Its online 2fa code activator,you can load 2FA secret and get 2FA code. 2FA live</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">3 aug Jul 2023</span>
+            <p class="news-details-text">Buy windows 10 pro with discount</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">30 Jul 2023</span>
+            <p class="news-details-text">Restocked google voice accounts, buy more google voice accounts  available.</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">26 Jul 2023</span>
+            <p class="news-details-text">Sale on google voice accounts, now you can buy google voice accounts at just $3.0 per one</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">21 Jul 2023</span>
+            <p class="news-details-text">Added microsoft windows 10 pro license activation product keys, online activation, retail version</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">20 Jul 2023</span>
+            <p class="news-details-text">Added microsoft windows 11 pro license activation product keys</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">1 Jul 2023</span>
+            <p class="news-details-text">Exciting News: We're Expanding Our Product Line! Bullet proof google voice added.</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates">30 jun 2023</span>
+            <p class="news-details-text">hello, we're opened</p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+        <li class="news-items">
+            <span class="news-dates"></span>
+            <p class="news-details-text"></p>
+        </li>
+
+                        </ul>
+                    </div>
+                    <!-- [END] -->
+    
+    
+                </aside>
+    
+            </div>
+    
+    
+        </div>
+    </div>
+    <!-- ============main content wrapper==========[end] -->
+    
+    <!-- footer partials start -->
+    <!-- ============footer section styles==========[start] -->
+<footer class="ab-footer-section">
+    <div class="ab-container">
+        <div class="ab-footer-wrapper">
+            <!-- footer top nav start -->
+            <div class="ab-footer-top">
+                <div class="ab-footer-nav-box">
+                    <a href="./index.html" class="ab-footer-brand">
+                        <img src="image/brand-logo.svg" class="desk-logo" width="210" height="34" width="" height=""
+                            alt="ab brand logo">
+                        <img src="image/brand-logo-mobo.svg" class="mobo-logo" width="124" height="20"
+                            alt="ab brand logo">
+                    </a>
+                    <div class="ab-footer-nav">
+                        <ul class="ab-footer-nav-items">
+                            <li class="ab-nav-link-items"><a href="./">catalog</a></li>
+                            <li class="ab-nav-link-items"><a href="./articles.html">articles</a></li>
+                            <li class="ab-nav-link-items"><a href="./about-us.html">about us</a></li>
+                            <li class="ab-nav-link-items"><a href="./contact-us.html">contacts</a></li>
+                            <li class="ab-nav-link-items"><a href="./faq.html">FAQ</a></li>
+                                </ul>
+                        <div class="ab-currency-button">
+                            <img src="image/currency-icons.svg" width="27" height="27" width="27" height="27"
+                                alt="currency icons" class="currency-icons">
+                                <a href="./suppliers.html"><span>Earn Money Selling Accounts</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="ab-footer-auth-box">
+                    <button class="ab-auth-button"><img src="image/user.svg" width="21" height="26"
+                            alt="user icons"></button>
+
+                </div>
+            </div>
+            <!-- [END] -->
+            <!-- footer main content start -->
+            <div class="ab-footer-main-wrap">
+                <div class="ab-footer-main">
+                    <div class="ab-footer-main-content">
+                        <div class="ab-footer-main-top">
+                            <div class="ab-footer-content-left">
+                                <h2 class="footer-title">If you need <span class="ab-white-text">quality</span>
+                                    100%
+                                    <span class="ab-white-text">legal</span> bulk <span
+                                        class="ab-white-text">accounts</span>, you've come to the right place.
+                                </h2>
+                            </div>
+                            <div class="ab-footer-content-right">
+
+                                <form id="footer-form" action="?" class="ab-footer-input-form">
+                                    <div id="footer-error-plank" class="footer-plank plank-red hidden">
+                                        <img src="image/warning-white.svg" width="30.11" height="30.11"
+                                            alt="icons warning" class="warning-icon"
+                                            style="background-color: var(--ab_warning);">
+                                        <p class="plank">Error</p>
+                                        <button id="error-plank-close" class="plank-red plank-dismiss"
+                                            type="button" disabled>&times;</button>
+                                    </div>
+                                    <div class="ab-form-input-box">
+
+                                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                        <div class="ab-input-group ">
+                                            <input id="name" name="name" type="text" class="ab-input" required
+                                                placeholder="Name">
+                                            <span class="warn-text">Please enter your name</span>
+                                        </div>
+                                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                        <div class="ab-input-group ">
+                                            <input id="email" name="email" type="email" class="ab-input"
+                                                placeholder="Email">
+                                            <span class="warn-text">Please enter a valid email address</span>
+                                        </div>
+                                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                        <div class="ab-textarea-group ">
+                                            <textarea id="text" style="resize: none;" name="text"
+                                                placeholder="Message"></textarea>
+                                            <span class="warn-text">Please enter a message between 10 and 1000
+                                                characters</span>
+                                        </div>
+                                        <!-- passing extra class('warning') for invalid/required inputs warning  -->
+                                        <div class="ab-check-requred ">
+                                            <label id="label-checkbox" for="checkedRequered">
+                                                <input type="checkbox" id="checkedRequered" class="check-mark">
+                                                <span class="ab-check-mark-box"></span>
+                                                <span id="checkbox-text" class="text">I have read and agree to the
+                                                    Privacy Policy
+                                                    and
+                                                    Terms of Service</span>
+                                            </label>
+                                        </div>
+                                        <div class="ab-button-group">
+                                            <!-- for desabled button you shout need to add a class 'ab-orange-button-disable' -->
+                                            <div id="recaptcha" class="g-recaptcha"
+                                                data-sitekey="6LcShYkmAAAAAA_FN5w0Oewh_-7XzIocjZlX6apw"
+                                                data-callback="onSubmit" data-size="invisible"></div>
+                                            <button id="submit" class=" ab-button-style ab-footer-button ">Send</button>
+                                        </div>
+                                    </div>
+                                    <!-- success massage popups -->
+                                    <!-- by passing extra class 'success-open' when user submited the input action -->
+                                    <div class="ab-success-msg-wrapper success-open">
+                                        <div class="ab-success-msg-cont-box">
+                                            <h6><img src="image/checkmark.svg" width="32" height="24" alt="mark icons">
+                                                Thank you</h6>
+                                            <p class="p-text">your message has been sent</p>
+                                        </div>
+                                        <button class="close-button"><img src="image/close-violet.svg"
+                                                alt="close icons"></button>
+                                    </div>
+                                    <!-- [END] -->
+                                </form>
+                            </div>
+                        </div>
+                        <div class="ab-footer-link-wrap">
+                            <ul class="ab-main-footer-links">
+                                <li class="ab-footer-link"><a href="./terms-of-service.html">Terms of Service</a></li>
+                                <li class="ab-footer-link"><a href="./shipping-policy.html">Shipping Policy</a></li>
+                                <li class="ab-footer-link"><a href="./privacy-policy.html">Privacy Policy</a></li>
+                                <li class="ab-footer-link"><a href="./refund-policy.html">Refund Policy</a></li>
+                                <li class="ab-footer-link"><a href="./payment-policy.html">Payment Policy</a></li>
+                                <li class="ab-footer-link"><a href="./cookies-policy.html">Cookies Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [END] -->
+            <!-- footer bottom content start -->
+            <div class="ab-footer-botton">
+                <p class="ab-copyright-text">| 16 East 40th Street, Suite 805, 10016 | Phone: +1 213-781-9212 |
+                    Email: buddy@accbuddy.com</p>
+                <p class="ab-copyright-text">© 2023 accbuddy. All rights reserved.</p>
+            </div>
+        </div>
+    </div>
+
+
+
+</footer>
+<!-- ============footer section styles==========[end] -->
+    <!-- cookies policy start -->
+      <!-- ============cookie policy section styles==========[start] -->
+
+        <!-- after first load page By passing 'active' class cookie policy show after 5s delay  
+            ,after click accept or decline should removed the active class-->
+
+            <div class="ab-cookie-policy-content-wrap">
+                <div class="ab-container">
+                    <div class="ab-cookie-text-content">
+                        <h2 class="ab-cookie-title">Cookie Policy</h2>
+                        <p class="ab-cookie-desc">Our website uses cookies to improve your browsing experience. By using our
+                            site
+                            you agree to the use of cookies. </p>
+                    </div>
+                    <div class="ab-cookie-button-content">
+                        <button class="ab-user-action-button">Accept</button>
+                        <button class="ab-user-action-button">Decline</button>
+                        <button class="ab-user-action-button">Learn more</button>
+                    </div>
+                </div>
+            </div>
+            <!-- ============cokie policy section styles==========[end] -->
+    <!-- [end] -->
+    
+    <!-- js code start here -->
+      </body>
+  
+  </html>
+  
+    

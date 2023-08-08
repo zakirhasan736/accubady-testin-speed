@@ -133,6 +133,7 @@
   .ab-order-details-content
   .ab-order-details-notes {
   margin-top: 48.27px;
+  display:"none"
 }
 .ab-main--content.order-details--page .ab-promo-content-box {
   margin-bottom: 81px;

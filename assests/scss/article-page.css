@@ -33,3 +33,10 @@
     padding-bottom: 84px;
     padding-top: 104px;
   }
+  @media screen and (max-width:991px) {
+    .ab-article-content-wrapper > .ab-article-card-items:nth-child(1) {
+      display: block;
+      width: 100%;
+      flex: 0 0 100%;
+    }
+  }

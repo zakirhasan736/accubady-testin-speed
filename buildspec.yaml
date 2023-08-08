@@ -1,0 +1,17 @@
+version: 0.2
+
+phases:
+  pre_build:
+    commands:
+      - aws s3 rm s3://accbuddy.com --recursive
+  build:
+    commands:
+      - chmod +x codebuild-scripts/remove_html_extension.sh
+      - ./codebuild-scripts/remove_html_extension.sh
+  post_build:
+    commands:
+      - echo "Entering post_build phase"
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'docs'

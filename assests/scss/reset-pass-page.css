@@ -29,7 +29,7 @@
   top: 0;
   height: 100%;
   z-index: 9;
-  background: #fff;
+  background: transparent;
   padding: 22px 15px 15px 10px;
 }
 @media screen and (max-width: 991px) {
@@ -52,4 +52,67 @@
 .ab-auth-content-wrap-box.confirmation-reset-password.confirmation-password-open,
 .ab-auth-content-wrap-box.reset-success-massage.success-massage-open{
     display: block;
+}
+
+
+
+.footer-plank {
+  height: 61.34px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 17.38px;
+  gap: 10.22px;
+  margin-bottom: 5px;
+}
+
+.plank-red {
+  background-color: var(--ab_warning);
+  color: var(--ab_white);
+}
+
+.plank-green {
+  background-color: green;
+  color: var(--ab_white);
+}
+
+.hidden {
+  display: none;
+}
+
+.plank-dismiss {
+  margin-left: auto;
+  width: 30px;
+  height: 30px;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+[id^="form-submit-"]:disabled {
+  cursor: not-allowed !important;
+  background-color:  #F6CE8E !important;
+}
+
+.ui-response {
+  grid-column: span 2 !important;
+}
+
+.ab-auth-content-wrap-box.reset-success-massage {
+  .ab-success-title {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -.5px;
+  }
+
+  font-family: var(--ab_primary-font);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 23px;
+  letter-spacing: 0;
+  text-align: left;
+  color: var(--ab_violet);
 }

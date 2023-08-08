@@ -1,0 +1,1 @@
+const button1=document.getElementById("triggerBtn"),button2=document.getElementById("closeBtn"),mobileNav=document.querySelector(".mobilenav");function showMobileNav(){mobileNav.classList.add("open")}function hideMobileNav(){mobileNav.classList.remove("open")}button1.addEventListener("click",showMobileNav),button2.addEventListener("click",hideMobileNav);

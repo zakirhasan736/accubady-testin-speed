@@ -3,3 +3,41 @@
 @import url('./partials/block-content.css');
 @import url('./partials/promo.css');
 @import url('./partials/footer.css');
+
+.ab-auth-content-wrap-box {
+    max-width: 100% !important;
+}
+
+.reset-utilities {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 1;
+    min-width: 50%;
+}
+
+.resend-email {
+    text-decoration: underline;
+    color: var(--ab_violet);
+    cursor: pointer;
+}
+
+.resend-email.inactive {
+    text-decoration: underline;
+    color: #A990D3;
+    cursor: default;
+    display: none;
+}
+
+#signin-submit:disabled {
+    cursor: not-allowed !important;
+    background-color: #F6CE8E !important;
+}
+
+@media screen and (max-width: 767px) {
+    .reset-utilities {
+        width: 100%;
+    }
+
+    
+}

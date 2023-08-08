@@ -1,0 +1,189 @@
+@@include("partials/_head.html",{
+"pageCss": 'marchent-page',
+"description": 'Accbuddy offers genuine software product keys with discount',
+"keywordText": 'buy Windows 11 product key, buy Windows 10 product key, buy VMware Fusion PRO 13, buy VMware Workstation O 17',
+"title": 'Your Shopping Cart - AccBuddy',
+"canonical": 'https://accbuddy.com/shopping-cart'
+
+})
+@@include("partials/_header.html")
+<!-- ============main content wrapper==========[start] -->
+<script src="./js/shopping-cart.js"></script>
+<div class="ab-main-content-wrapper">
+    <div class="ab-container">
+        <div class="ab-main-content-box payment-detail-wrapper-box ab-marchant-details-wrapper">
+
+            <!-- main content start here -->
+            <main class="ab-main--content payment-details--page ab-marchant-details-page">
+                <div class="ab-order-details-content ab-order-details-popup open-info">
+                    <div class="ab-tablet-view-wrapper">
+
+                        <h1 class="ab-order-title ab-violate-color">Shopping Cart</h1>
+
+                        @@include("partials/_account-info-link.html")
+                    </div>
+                    <div class="ab-order-details-wrapper  ab-screen-load">
+                        <div class="ab-order-details-info-box">
+                            <div class="ab-order-details-order-info">
+                                <div class="ab-order-details-left">
+                                    <div class="ab-order-title-box">
+                                        <h6 class="ab-order-info-title ab-violate-color">Gmail.com PVA</h6>
+                                        <img src="/image/gmail-small-icons0.svg" alt="gmail icons"
+                                            class="ab-order-account-icons" style="max-width: 5%;">
+                                    </div>
+                                    <p class="ab-order-info-desc">Accounts are phone verified
+                                        with
+                                        USA
+                                        numbers. Secret answers are NOT included, recovery
+                                        e-mails
+                                        are
+                                        included with passwords. US IPs only.
+                                        <br><br>
+                                        Accounts are NOT SUITABLE for Cash App or Google Voice
+                                        creation!
+                                        <br><br>
+                                        Gmail.com Stable USA Plus
+                                    </p>
+
+                                    <div class="ab-order-info-details">
+                                        <!-- NOTE:when user fill more qty number that not available that time pass here a extra class 'warning-qty' -->
+                                        <div class="ab-order-info-item " id ="quantity-container">
+                                            <p class="ab-quantity-title">Quantity</p>
+                                            <div class="ab-quatitly-fild">
+                                                <input type="text" class="ab-quantity-number" value="1" id="quantity-input"
+                                                    oninput="calculateTotal()">
+                                                <!--NOTE: if shown warning in parent class that time available text should hide and show ad-qty-warning -->
+                                                <p class="ab-available-quantity ab-violate-color">(Available:
+                                                    <span>320</span>)</p>
+                                                <p class="ab-available-quantity ab-warning-color ab-qty-warning"><img
+                                                        width="21" height="21" src="image/warning-icons.svg"
+                                                        alt="warning icons"> <span id="quantity-warning">It’s only 200 items available</span>
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-price-title">Price</p>
+                                            <span class="ab-order-price">$0.15</span>
+                                        </div>
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-discount-title">Your Discount</p>
+                                            <span class="ab-order-price">-$2.00</span>
+                                        </div>
+                                        <div class="ab-order-info-item">
+                                            <p class="ab-due-title">Amount due</p>
+                                            <span class="ab-order-price">$13.00</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="ab-payment-details-page-main-wrapper">
+                                <div class="ab-order-payment-method" >
+                                    <h6 class="ab-title ab-violate-color">Select payment method</h6>
+                                    <ul class="ab-payment-method-lits" id = "all-checkbox-container">
+                                        <li class="ab-payment-items" >
+                                            <!-- NOTE:when user fill more amount that exceed the max quantity that time pass here a extra class 'warning-payment' -->
+                                            <div class="ab-check-box-select" id="checkbox-container">
+                                                
+                                                <label for="abPayment1" class="ab-checkbox-content">
+                                                    <div class="ab-ckeck-mark-box">
+                                                        <input type="checkbox" name="checkbox" id="abPayment1"
+                                                            onclick="showButton('abPayment1')">
+                                                        <div class="ab-custom-check"></div>
+                                                    </div>
+                                                    <div class="payment-methods"><img src="/image/paypal.svg"
+                                                            alt="paypal icons" class="payment-methods-img"></div>
+                                                </label>
+                                                
+                                                <p class="ab-available-quantity ab-warning-color ab-qty-warning"><img
+                                                        width="21" height="21" src="image/warning-icons.svg"
+                                                        alt="warning icons"> <span>PayPal is available for amounts less
+                                                        than $20</span></p>
+                                                <span class="ab-warning-color hidden" id="no-merchant-selected">Please selected a merchant</span>
+                                            </div>
+                                        </li>
+                                        <li class="ab-payment-items">
+                                            <div class="ab-check-box-select">
+                                                <label for="abPayment2" class="ab-checkbox-content">
+                                                    <div class="ab-ckeck-mark-box">
+                                                        <input type="checkbox" name="checkbox" id="abPayment2"
+                                                            onclick="showButton('abPayment2')">
+                                                        <div class="ab-custom-check"></div>
+                                                    </div>
+                                                    <div class="payment-methods">Another
+                                                        merchant</div>
+                                                </label>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- where user select merchant then need to pass a extra class
+                                             'select-merchant' then the email btn should be shown -->
+                                <div class="ab-order-details-popup-input-group select-merchant">
+                                    <!--
+                                    <div class="ab-order-info-input-group" >
+                                        <label class="ab-order-input-info-title">Email</label>
+                                        <input type="email" name="email" id="email" placeholder=""
+                                            class="ab-input-info-item">
+                                    </div >-->
+                                    <button id='pp-button' class="ab-button-style ab-buy-button ab-paypal-buy-button"
+                                        onclick="openPopup()">Buy now with <img src="/image/paypal.svg"
+                                            alt="paypal icons" class="payment-methods-img"></button>
+                                    <button onclick="buy()" id='buy-button' class="ab-button-style ab-buy-button">Buy</button>
+                                </div>
+                                <!-- [end] -->
+                            </div>
+                        </div>
+                        <div class="ab-order-details-notes">
+                            <h6 class="ab-note-title ab-violate-color">Important!</h6>
+                            <p class="ab-note-desc">
+                                These accounts ARE NOT suitable for Youtube! Please, buy
+                                Youtube.com
+                                account in case you need Youtube functionality <br>
+                                No replacements/refunds will be offered if you ignore this
+                                message
+                                <br><br>
+                                Accounts are NOT SUITABLE for Whatsapp / Cashapp / Google Voice
+                                account creation. There will be no refund if you are going to
+                                buy
+                                them for the above purpose!
+                            </p>
+                        </div>
+                        <!-- start preloader screen here -->
+                        <div class="ab-preloader-screen">
+                            <img src="image/brand-logo-marquee.svg" alt="brand logo">
+                            <p class="ab-screen-highlight-title ab-violate-color" id="loading-screen-message">Please wait a second...</p>
+                    </div>
+                        <!-- [end] -->
+                    </div>
+                </div>
+                @@include("partials/_promo.html")
+            </main>
+
+            <!-- sidebar content start here -->
+            <aside class="ab-main--sidebar-content">
+                @@include("partials/_account-info-link.html")
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v1.html",{
+                "class": '',
+                })
+
+                <!-- text block content start -->
+                @@include("partials/_block-content-v2.html",{
+                "class": '',
+                })
+            </aside>
+
+        </div>
+    </div>
+</div>
+<!-- ============main content wrapper==========[end] -->
+<!-- footer partials start -->
+@@include("partials/_footer.html")
+<!-- cookies policy start -->
+@@include("partials/_cookies.html")
+<!-- [end] -->
+@@include("partials/_foot.html")

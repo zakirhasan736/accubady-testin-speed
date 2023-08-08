@@ -487,7 +487,7 @@
   @media screen and (max-width: 991px) {
     .ab-account-table tbody tr td {
       font-size: 14px;
-      line-height: 30px;
+      line-height: normal;
     }
   
     .ab-main-content-box.home-main-page .ab-account-content-wrapper {
@@ -515,6 +515,8 @@
     .ab-account-table tbody tr td:nth-child(1) {
       width: 45%;
       min-width: 170px;
+      padding-top: 7.80px;
+      padding-bottom: 7.80px;
     }
     .ab-account-table tbody tr td:nth-child(2) {
       width: 30%;
