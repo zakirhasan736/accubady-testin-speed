@@ -634,3 +634,14 @@
         display: none;
       }
     }
+    .ab-header-wrapper .ab-header-nav-box a.ab-header-brand {
+      width: 210px;
+  }
+  .ab-header-wrapper .ab-header-nav-box a.ab-header-brand img{
+    width: 100%;
+}
+  @media screen and (max-width:767px) {
+    .ab-header-wrapper .ab-header-nav-box a.ab-header-brand {
+      width: 124px;
+  }
+  }
