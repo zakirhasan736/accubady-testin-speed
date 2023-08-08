@@ -1,16 +1,6 @@
 /***********************************
        global css styles 
 **********************************/
-@import url('./partials/auth.css');
-@import url('./partials/cookies.css');
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-display: swap;
-}
-
 @font-face {
   font-family: 'Lexend';
   src: url('./web/Lexend-ExtraBold.eot');
@@ -49,6 +39,12 @@
   font-style: normal;
   font-display: swap;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-display: swap;
+}
 
 :root {
   --ab_orange: rgba(250, 156, 41, 1);
@@ -60,6 +56,10 @@
   --ab_primary-font: 'Lexend', 'Helvetica', 'Arial', 'Open Sans',  sans-serif;
   --ab_secondary-font: 'Gotham', sans-serif;
 }
+
+@import url('./partials/auth.css');
+@import url('./partials/cookies.css');
+
 .ab-orange-color > a,
 .ab-orange-color {
   color: rgba(250, 156, 41, 1) !important;
